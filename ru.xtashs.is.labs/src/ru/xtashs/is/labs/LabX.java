@@ -24,7 +24,8 @@ public class LabX {
 
 		Lab_1 lab1 = new Lab_1();
 		Lab_2 lab2 = new Lab_2();
-		lab2.main(lab);
+		Lab_3 lab3 = new Lab_3();
+		lab3.main(lab);
 	}
 	
 	public final static String readLine(String p) throws IOException {
