@@ -23,7 +23,8 @@ public class LabX {
 		LabX lab = new LabX();
 
 		Lab_1 lab1 = new Lab_1();
-		lab1.main(lab);
+		Lab_2 lab2 = new Lab_2();
+		lab2.main(lab);
 	}
 	
 	public final static String readLine(String p) throws IOException {
@@ -35,5 +36,8 @@ public class LabX {
 	public final static void cls() {
 		// TODO: ff
 	}
-
+	
+	public static int rand(int min, int max) {
+		return (int)(Math.random() * ((max - min) + 1)) + min;
+	}
 }
