@@ -1,14 +1,13 @@
 /**
- * 
+ * The first laboratory work.
  */
 package ru.xtashs.is.labs;
 
 /**
- * @author stud
- *
+ * @author xTCry (Vladislav Kh)
  */
 public class Lab_1 {
-
+	
 	public void main(LabX lab) {
 		System.out.println("Laba 1 out data;");
 		Ex1();
@@ -47,11 +46,11 @@ public class Lab_1 {
 	
 	private void Ex2() {
 		// Variant X
-		final double minX = -0.1,
-			maxX = 0.9,
-			delatX = 0.1,
-			eps = 1e-5;
-		
+		final double minX = 0.2,
+			maxX = 0.8,
+			delatX = 0.5,
+			eps = 1e-4;
+
 		double x = minX;
 		System.out.println("Ex2\n==========");
 		System.out.println("x\t\ty");
@@ -59,12 +58,13 @@ public class Lab_1 {
 		while (x <= maxX){
 			double T = 1,
 				y = 0;
-			int k = 0;
+			int n = 1;
 			
 			while(Math.abs(T) > eps){
 				y += T;
-				T *= (x * k + x) / k;
-				k++;
+				T *= (Math.pow(n, 2) + 1) * x;
+				T /= (Math.pow(n - 1, 2) + 1) * n * 2;
+				n++;
 			}
 			
 			System.out.println(x + "\t\t" + y);

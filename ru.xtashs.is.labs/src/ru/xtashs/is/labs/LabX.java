@@ -1,5 +1,5 @@
 /**
- * 
+ * Main file. Controller labx
  */
 package ru.xtashs.is.labs;
 
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * @author stud
+ * @author xTCry (Vladislav Kh)
  *
  */
 public class LabX {
